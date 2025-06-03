@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products - GreenHarvest Seeds</title>
+    <meta name="description" content="Browse our premium seed collection" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="logo-icon">🌱</span>
+          <span class="logo-text">GreenHarvest</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="login.html" class="nav-link">Login</a></li>
+          <li><a href="products.html" class="nav-link active">Products</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Products Header -->
+    <section class="products-header">
+      <div class="container">
+        <h1>Premium Seed Collection</h1>
+        <p>Carefully selected varieties for your garden success</p>
+      </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+      <div class="container">
+        <div class="products-grid">
+          
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="product-image">
+              <span class="product-emoji">🍅</span>
+            </div>
+            <div class="product-content">
+              <h3 class="product-name">Heritage Tomato Mix</h3>
+              <p class="product-description">
+                A carefully curated blend of heirloom tomato varieties including Cherokee Purple, Brandywine, and Green Zebra. Perfect for gourmet cooking and fresh eating.
+              </p>
+              <div class="product-features">
+                <span class="feature-tag">Heirloom</span>
+                <span class="feature-tag">85 days</span>
+                <span class="feature-tag">Indeterminate</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">$12.99</span>
+                <button class="buy-button" onclick="buyProduct('Heritage Tomato Mix')">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-image">
+              <span class="product-emoji">🥕</span>
+            </div>
+            <div class="product-content">
+              <h3 class="product-name">Rainbow Carrot Collection</h3>
+              <p class="product-description">
+                Stunning mix of purple, yellow, white, and orange carrots. Sweet, crisp, and packed with nutrients. Perfect for colorful garden displays and healthy meals.
+              </p>
+              <div class="product-features">
+                <span class="feature-tag">Colorful</span>
+                <span class="feature-tag">70 days</span>
+                <span class="feature-tag">Cool Season</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">$8.99</span>
+                <button class="buy-button" onclick="buyProduct('Rainbow Carrot Collection')">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="product-image">
+              <span class="product-emoji">🌿</span>
+            </div>
+            <div class="product-content">
+              <h3 class="product-name">Culinary Herb Garden Kit</h3>
+              <p class="product-description">
+                Essential herbs for every kitchen garden: basil, oregano, thyme, rosemary, and parsley. Fresh flavors for your cooking all season long.
+              </p>
+              <div class="product-features">
+                <span class="feature-tag">5 Varieties</span>
+                <span class="feature-tag">30-60 days</span>
+                <span class="feature-tag">Aromatic</span>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">$15.99</span>
+                <button class="buy-button" onclick="buyProduct('Culinary Herb Garden Kit')">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <span class="logo-icon">🌱</span>
+            <span class="logo-text">GreenHarvest</span>
+          </div>
+          <p>&copy; 2024 GreenHarvest Seeds. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function buyProduct(productName) {
+        alert(`${productName} added to cart! Thank you for choosing GreenHarvest Seeds.`);
+      }
+    </script>
+  </body>
+</html>

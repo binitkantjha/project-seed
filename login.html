@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - GreenHarvest Seeds</title>
+    <meta name="description" content="Login to your GreenHarvest Seeds account" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="logo-icon">🌱</span>
+          <span class="logo-text">GreenHarvest</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="login.html" class="nav-link active">Login</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Login Section -->
+    <section class="login-section">
+      <div class="login-container">
+        <div class="login-card">
+          <div class="login-header">
+            <h1>Welcome Back</h1>
+            <p>Sign in to access our premium seed collection</p>
+          </div>
+          
+          <form class="login-form" onsubmit="handleLogin(event)">
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" required placeholder="Enter your username">
+            </div>
+            
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required placeholder="Enter your password">
+            </div>
+            
+            <button type="submit" class="login-button">Sign In</button>
+          </form>
+          
+          <div class="login-footer">
+            <p>New to GreenHarvest? <a href="index.html">Learn more</a></p>
+          </div>
+        </div>
+        
+        <div class="login-image">
+          <div class="floating-seeds">
+            <span class="seed">🌱</span>
+            <span class="seed">🌿</span>
+            <span class="seed">🍅</span>
+            <span class="seed">🥕</span>
+            <span class="seed">🌶️</span>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- i have commented this feature which will redirect to the product page from login page .  -->
+    <!-- <script>
+      function handleLogin(event) {
+        event.preventDefault();
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        
+        if (username && password) {
+          window.location.href = 'products.html';
+        }
+      }
+    </script> -->
+  </body>
+</html>
